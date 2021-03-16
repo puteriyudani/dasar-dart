@@ -59,10 +59,22 @@
 // }
 
 // lambda expression
+// import 'dart:io';
+
+// double luas_segiempat(double panjang, double lebar) => panjang * lebar;
+
+// main(List<String> arguments) {
+//   print(luas_segiempat(6, 3));
+// }
+
+// function adalah first-class object
 import 'dart:io';
 
 double luas_segiempat(double panjang, double lebar) => panjang * lebar;
 
 main(List<String> arguments) {
-  print(luas_segiempat(6, 3));
+  Function f;
+  f = luas_segiempat;
+
+  print(f(6.0, 3.0));
 }
