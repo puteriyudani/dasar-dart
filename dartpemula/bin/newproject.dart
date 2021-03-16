@@ -1,8 +1,8 @@
-// 3 = Int Input
+// 4 = Double input
 import 'dart:io';
 
 void main(List<String> arguments) {
   String input = stdin.readLineSync();
-  int number = int.tryParse(input);
+  double number = double.tryParse(input);
   print(number + 10);
 }
