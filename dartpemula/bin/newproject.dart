@@ -1,8 +1,4 @@
-// 4 = Double input
-import 'dart:io';
-
+// menampilkan 'Hello World!'
 void main(List<String> arguments) {
-  String input = stdin.readLineSync();
-  double number = double.tryParse(input);
-  print(number + 10);
+  print('Hello world!');
 }
