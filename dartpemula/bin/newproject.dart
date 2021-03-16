@@ -1,7 +1,8 @@
-// 2 = String input
+// 3 = Int Input
 import 'dart:io';
 
 void main(List<String> arguments) {
   String input = stdin.readLineSync();
-  print(input);
+  int number = int.tryParse(input);
+  print(number + 10);
 }
