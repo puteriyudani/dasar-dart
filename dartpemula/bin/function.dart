@@ -35,25 +35,34 @@
 // }
 
 // optional parameter
+// import 'dart:io';
+
+// String say(String from, String message, {String to, String appName}) {
+//   return from +
+//       " say " +
+//       message +
+//       ((to != null) ? " to " + to : "") +
+//       ((appName != null) ? " via " + appName : "");
+// }
+
+// String say2(String from, String message, [String to, String appName]) {
+//   return from +
+//       " say " +
+//       message +
+//       ((to != null) ? " to " + to : "") +
+//       ((appName != null) ? " via " + appName : "");
+// }
+
+// main(List<String> arguments) {
+//   print(say("Puteri", "Hello", to: "Mita", appName: "WhatsApp"));
+//   print(say2("Mita", "Hello", "Puteri", "WhatsApp"));
+// }
+
+// lambda expression
 import 'dart:io';
 
-String say(String from, String message, {String to, String appName}) {
-  return from +
-      " say " +
-      message +
-      ((to != null) ? " to " + to : "") +
-      ((appName != null) ? " via " + appName : "");
-}
-
-String say2(String from, String message, [String to, String appName]) {
-  return from +
-      " say " +
-      message +
-      ((to != null) ? " to " + to : "") +
-      ((appName != null) ? " via " + appName : "");
-}
+double luas_segiempat(double panjang, double lebar) => panjang * lebar;
 
 main(List<String> arguments) {
-  print(say("Puteri", "Hello", to: "Mita", appName: "WhatsApp"));
-  print(say2("Mita", "Hello", "Puteri", "WhatsApp"));
+  print(luas_segiempat(6, 3));
 }
