@@ -13,18 +13,30 @@
 //   }
 // }
 
-// if else cara 2
+// // if else cara 2
+// import 'dart:io';
+
+// main(List<String> arguments) {
+//   int number = int.tryParse(stdin.readLineSync());
+//   String output;
+
+//   if (number > 0) {
+//     output = "positif";
+//   } else {
+//     output = "negatif atau nol";
+//   }
+
+//   print(output);
+// }
+
+// if else cara 3
 import 'dart:io';
 
 main(List<String> arguments) {
   int number = int.tryParse(stdin.readLineSync());
   String output;
 
-  if (number > 0) {
-    output = "positif";
-  } else {
-    output = "negatif atau nol";
-  }
+  output = (number > 0) ? "positif" : "negatif atau nol";
 
   print(output);
 }
