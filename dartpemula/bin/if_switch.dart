@@ -1,14 +1,15 @@
-// 1 = if else cara 1
+// 2 = if else cara 2
 import 'dart:io';
 
 main(List<String> arguments) {
   int number = int.tryParse(stdin.readLineSync());
+  String output;
 
   if (number > 0) {
-    print('positif');
-  } else if (number < 0) {
-    print('negatif');
+    output = "positif";
   } else {
-    print('nol');
+    output = "negatif atau nol";
   }
+
+  print(output);
 }
