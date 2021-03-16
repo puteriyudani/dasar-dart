@@ -1,4 +1,7 @@
-// 1 = Menampilkan 'Hello World!'
+// 2 = String input
+import 'dart:io';
+
 void main(List<String> arguments) {
-  print('Hello world!');
+  String input = stdin.readLineSync();
+  print(input);
 }
