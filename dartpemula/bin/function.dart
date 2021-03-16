@@ -68,13 +68,26 @@
 // }
 
 // function adalah first-class object
+// import 'dart:io';
+
+// double luas_segiempat(double panjang, double lebar) => panjang * lebar;
+
+// main(List<String> arguments) {
+//   Function f;
+//   f = luas_segiempat;
+
+//   print(f(6.0, 3.0));
+// }
+
+// anonymous function
 import 'dart:io';
 
 double luas_segiempat(double panjang, double lebar) => panjang * lebar;
 
-main(List<String> arguments) {
-  Function f;
-  f = luas_segiempat;
+int doMathOperator(int number1, int number2, Function(int, int) operator) {
+  return operator(number1, number2);
+}
 
-  print(f(6.0, 3.0));
+main(List<String> arguments) {
+  print(doMathOperator(1, 2, (a, b) => a * b));
 }
