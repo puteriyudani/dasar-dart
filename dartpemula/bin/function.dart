@@ -19,20 +19,20 @@
 // }
 
 // luas_segiempat cara 2 (function)
-// import 'dart:io';
+import 'dart:io';
 
-// double luas_segiempat(double panjang, double lebar) {
-//   return panjang * lebar;
-// }
+double luas_segiempat(double panjang, double lebar) {
+  return panjang * lebar;
+}
 
-// main(List<String> arguments) {
-//   double p, l, luas;
+main(List<String> arguments) {
+  double p, l, luas;
 
-//   p = double.tryParse(stdin.readLineSync());
-//   l = double.tryParse(stdin.readLineSync());
+  p = double.tryParse(stdin.readLineSync());
+  l = double.tryParse(stdin.readLineSync());
 
-//   print(luas_segiempat(p, l));
-// }
+  print(luas_segiempat(p, l));
+}
 
 // optional parameter
 // import 'dart:io';
@@ -80,14 +80,14 @@
 // }
 
 // anonymous function
-import 'dart:io';
+// import 'dart:io';
 
-double luas_segiempat(double panjang, double lebar) => panjang * lebar;
+// double luas_segiempat(double panjang, double lebar) => panjang * lebar;
 
-int doMathOperator(int number1, int number2, Function(int, int) operator) {
-  return operator(number1, number2);
-}
+// int doMathOperator(int number1, int number2, Function(int, int) operator) {
+//   return operator(number1, number2);
+// }
 
-main(List<String> arguments) {
-  print(doMathOperator(1, 2, (a, b) => a * b));
-}
+// main(List<String> arguments) {
+//   print(doMathOperator(1, 2, (a, b) => a * b));
+// }
